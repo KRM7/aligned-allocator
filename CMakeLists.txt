@@ -1,6 +1,6 @@
 ﻿cmake_minimum_required(VERSION 3.21)
 
-project(name VERSION 0.1 LANGUAGES CXX)
+project(aligned-allocator VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build")
 
