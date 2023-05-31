@@ -1,4 +1,4 @@
-#include "aligned_alloc.hpp"
+#include "aligned_allocator.hpp"
 #include <vector>
 
 int main()

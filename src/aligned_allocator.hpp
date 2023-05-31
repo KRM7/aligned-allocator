@@ -1,5 +1,5 @@
-#ifndef ALIGNED_ALLOC_HPP
-#define ALIGNED_ALLOC_HPP
+#ifndef ALIGNED_ALLOCATOR_HPP
+#define ALIGNED_ALLOCATOR_HPP
 
 #include <new>
 #include <stdexcept>
@@ -63,4 +63,4 @@ inline constexpr bool operator==(const aligned_allocator<T, Align>&, const align
     return true;
 }
 
-#endif // !ALIGNED_ALLOC_HPP
+#endif // !ALIGNED_ALLOCATOR_HPP
