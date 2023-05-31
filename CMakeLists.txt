@@ -22,4 +22,4 @@ file(GLOB_RECURSE HEADERS CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCES} ${HEADERS})
 
 target_compile_features(${CMAKE_PROJECT_NAME} PUBLIC "cxx_std_20")
-target_compile_options(${CMAKE_PROJECT_NAME} PUBLIC "$<$<CXX_COMPILER_ID:MSVC>:-Zc:preprocessor>")
+target_compile_options(${CMAKE_PROJECT_NAME} PUBLIC "$<$<CXX_COMPILER_ID:MSVC>:-Zc:preprocessor>" "$<$<CXX_COMPILER_ID:MSVC>:-Zc:__cplusplus>")
