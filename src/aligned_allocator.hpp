@@ -47,7 +47,7 @@ public:
 
     constexpr void deallocate(pointer storage, size_type size) const noexcept
     {
-        ::operator delete[](storage, size, alignment);
+        ::operator delete[](storage, size * sizeof(value_type), alignment);
     }
 
     [[nodiscard]]
